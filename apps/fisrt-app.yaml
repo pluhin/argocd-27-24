@@ -16,8 +16,6 @@ spec:
         value: 200Mi
       - name: ingress.hosts[0].host
         value: app-helm.k8s-17.sa
-      - name: ingress.hosts[0].host
-        value: app-helm-argo.k8s-17.sa
       - name: ingress.hosts[0].paths[0].path
         value: /
       - name: ingress.hosts[0].paths[0].pathType
