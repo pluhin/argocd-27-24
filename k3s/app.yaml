@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webserver
+  namespace: default
   labels:
     app: simple-web
 spec:
@@ -32,6 +33,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: simple-web-service
+  namespace: default
   labels:
     run: simple-web-service
 spec:
@@ -46,6 +48,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-sa
+  namespace: default
   annotations:
     nginx.ingress.kubernetes.io/server-alias: "app.k8s-18.sa"
 spec:
