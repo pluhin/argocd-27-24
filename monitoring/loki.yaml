@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    chart: grafana-loki
-    repoURL: https://charts.bitnami.com/bitnami
-    targetRevision: 2.19.1
+    chart: loki-stack
+    repoURL: https://grafana.github.io/helm-charts
+    targetRevision: 2.10.2
   syncPolicy:
     automated: {}
